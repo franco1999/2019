@@ -1,0 +1,11 @@
+int factorial(int numero){                             //Recursividad
+
+    int respuesta;
+
+    if(numero == 1){
+            return numero;
+    }
+    respuesta = numero * factorial(numero-1);
+
+    return respuesta;
+}
