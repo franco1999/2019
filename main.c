@@ -1,61 +1,68 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define CANTIDAD_ALUMNOS 4
+#include "string.h"
+#define TAM 4
 
-/*int main()
+// HACER : funcion que permita modificar los datos del alumno. ej legajo.
+
+void getString(char mensaje[], char imput[]);
+void getStringLetras(char mensaje[], char imput[]);
+void gesStringNumeros(char mensaje[], char imput[]);
+
+void mostrarAlumnos(char[][50], char[][50], int nota[], int edad [], int tamanio);
+void ordenarAlumnos(char[][50], char[][50], int nota[], int edad [], int tamanio);
+
+int main()
 {
-    char nombres[CANTIDAD_ALUMNOS][50]= {"Alfredo", "Rogelio", "Julieta", "Pablo"};
-    char apellidos[CANTIDAD_ALUMNOS][50]={"Mercurio", "Agua", "Roberto", "McCartney"};
-    int edades[CANTIDAD_ALUMNOS]={54,24,37,18};
-    int notas[CANTIDAD_ALUMNOS]={2,4,7,10};
+    char apellidos(TAM)[50]={"Rial", "Menor", "Mayor", "Gomes"};
+    char nombres(TAM)[50]={"Jorge", "Matias", "Roberto", "Alberto"};
+    int edad[TAM]={56, 30, 15, 12};
+    int nota[TAM]=(6, 8, 9);
+    char mail[][30];
     int i;
+    int j;
+    printf("10%s\t10%s\t%s\t%s\n", "nombre", "apellido", "edad", "nota")
 
-     for(i=0; i<CANTIDAD_ALUMNOS; i++)
+
+    return 0;
+}
+void ordenarAlumnos(char nombre[][50], char apellidos)
+{
+    char auxCadena[50];
+    int i, j;
+    for (i=0; i<tam-1; i++)
         {
-            if(nombres[i] != -1)
+            for(j=i+1; j<tam, j++)
                 {
-                    printf("\n nombre:%s\n apellido: %s", nombres[i], apellidos[i]);
+                    if(strcpy(nombre[i], nombre[j])>1)
+                        {
+                            strcpy(auxCadena), nombre[i]);
+                            strcpy(nombre[i]), nombre[j]);
+                            strcpy(nombre[j], auxCadena);
+
+                            strcpy(auxCadena), apellidos[i]);
+                            strcpy(apellidos[i]), apellidos[j]);
+                            strcpy(apellidos[j], auxCadena);
+
+                            auxEntero= edad[i];
+                            adad[i]= edad[j];
+                        }
                 }
         }
-
-    char unNombre[50];
-    getString("\n\nIngrese nombre:", &unNombre);
-    //printf("el nombre es :%s", unNombre);
-    strcpy(nombres[0], unNombre);
-
-    for(i=0; i< CANTIDAD_ALUMNOS; i++)
-        {
-            getString("\n\nIngrese nombre:", nombres[1]);
-        }
-    for(i=0; i< CANTIDAD_ALUMNOS; i++)
-        {
-            printf("\n nombre:%s apellido:%s nota:%d edad:%d",nombres[1], apellidos[1], notas [1], edades[1]);
-        }
-}
-*/
-getStringLetras(mensaje, imput)
-{
-    char aux[50];
-    getString(mensaje, aux);
-    int esSoloLetras(char palabra []);
 }
 
 
 
-int 1;
-
-    for(i=1; )
-
-    if(palabra[i]!=' ')
-    {
-        if(palabra[i]<'a'&&palabra[i]>'z')
-            {
-                if(palabra[i]<'A'&& palabra[i]>'z')
-                return 0;
-            }
-    }
-}
 
 
 
-return 1;
+
+/*V ----  simples (int, floor, char )
+   \
+    \
+     \
+      compuestos - - - arrays ---- unidm
+                 \
+                  \
+                   estructuras
+                   */
